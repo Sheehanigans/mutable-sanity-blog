@@ -1,0 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# On-demand revalidation webhook endpoint
+[[headers]]
+  for = "/api/revalidate"
+  [headers.values]
+    Access-Control-Allow-Origin = "https://www.sanity.io"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"

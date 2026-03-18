@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/*
+ * ╔══════════════════════════════════════════════════════════════╗
+ * ║  THEME STAMP                                                 ║
+ * ║  All branding lives here. To white-label for a new client,  ║
+ * ║  swap the @theme values below — nothing else changes.        ║
+ * ╚══════════════════════════════════════════════════════════════╝
+ */
+@theme {
+  /* ─── Brand palette ─────────────────────────────────────────── */
+  --color-brand-50:  oklch(97% 0.015 250);
+  --color-brand-100: oklch(93% 0.035 250);
+  --color-brand-200: oklch(86% 0.07  250);
+  --color-brand-500: oklch(55% 0.20  250);
+  --color-brand-600: oklch(48% 0.22  250);
+  --color-brand-700: oklch(40% 0.22  250);
+
+  --color-accent: oklch(65% 0.25 200);
+
+  /* ─── Surfaces & foregrounds ────────────────────────────────── */
+  --color-surface:        oklch(99%  0     0);
+  --color-surface-muted:  oklch(96%  0.005 250);
+  --color-surface-subtle: oklch(91%  0.010 250);
+
+  --color-fg:        oklch(12%  0.010 250);
+  --color-fg-muted:  oklch(42%  0.010 250);
+  --color-fg-subtle: oklch(66%  0.010 250);
+
+  --color-border: oklch(88% 0.008 250);
+
+  /* ─── Typography ────────────────────────────────────────────── */
+  --font-sans:    "Inter",         ui-sans-serif,  system-ui, sans-serif;
+  --font-mono:    "Fira Code",     "JetBrains Mono", ui-monospace, monospace;
+  --font-display: "Cal Sans",      "Inter",          ui-sans-serif, sans-serif;
+
+  /* ─── Border radii ──────────────────────────────────────────── */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* ─── Shadows ───────────────────────────────────────────────── */
+  --shadow-card:       0 1px 3px oklch(0% 0 0 / 0.07), 0 4px 16px oklch(0% 0 0 / 0.05);
+  --shadow-card-hover: 0 4px 12px oklch(0% 0 0 / 0.11), 0 12px 32px oklch(0% 0 0 / 0.09);
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: var(--color-surface);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
