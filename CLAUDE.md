@@ -1,4 +1,4 @@
-# sanity-blog
+# mutable-sanity-blog
 
 A visually modern, tech-focused blog. 100% data-driven, white-labelable, deployed on Netlify.
 

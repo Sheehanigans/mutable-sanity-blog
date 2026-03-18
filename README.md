@@ -1,4 +1,4 @@
-# sanity-blog
+# mutable-sanity-blog
 
 A visually modern, tech-focused blog built with Next.js 15, Tailwind CSS v4, and Sanity v3. White-labelable, SEO-first, deployed on Netlify.
 
