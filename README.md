@@ -148,3 +148,8 @@ sanity/
   lib/client.ts               sanityFetch() with Next.js cache tags
   lib/queries.ts              All GROQ queries
 ```
+
+
+Blog Image Prompt Template Example:
+
+Image of [<REPLACE WITH SUBJECT HERE>], mid-century modern gouache illustration, dry brush texture, stylized geometric shapes, muted palette of burnt orange and avocado green, sophisticated editorial style, white border --ar 16:9

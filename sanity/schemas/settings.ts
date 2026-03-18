@@ -6,8 +6,6 @@ export const settings = defineType({
   title: 'Settings',
   type: 'document',
   icon: CogIcon,
-  // Only one settings document should ever exist
-  __experimental_actions: ['update', 'publish'],
   fields: [
     defineField({
       name: 'siteName',

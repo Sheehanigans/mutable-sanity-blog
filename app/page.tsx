@@ -3,6 +3,7 @@ import { sanityFetch } from '@/sanity/lib/client'
 import { postsQuery, settingsQuery } from '@/sanity/lib/queries'
 import type { SanityPost, SanitySettings } from '@/types/sanity'
 import { PostCard } from '@/components/PostCard'
+import { FeaturedPost } from '@/components/FeaturedPost'
 
 export async function generateMetadata(): Promise<Metadata> {
   const settings = await sanityFetch<SanitySettings | null>({
@@ -34,11 +35,16 @@ export default async function HomePage() {
       {posts.length === 0 ? (
         <p className="text-[--color-fg-muted]">No posts published yet.</p>
       ) : (
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <PostCard key={post._id} post={post} />
-          ))}
-        </div>
+        <>
+          <FeaturedPost post={posts[0]} />
+          {posts.length > 1 && (
+            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {posts.slice(1).map((post) => (
+                <PostCard key={post._id} post={post} />
+              ))}
+            </div>
+          )}
+        </>
       )}
     </div>
   )

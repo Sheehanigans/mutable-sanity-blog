@@ -67,7 +67,7 @@ export function PortableTextContent({ value }: Props) {
         },
         block: {
           normal: ({ children }) => (
-            <p className="mb-5 leading-relaxed text-[--color-fg-muted]">{children}</p>
+            <p className="mb-5 leading-[1.75] text-[--color-fg-muted]">{children}</p>
           ),
           h2: ({ children }) => (
             <h2 className="mt-12 mb-4 text-2xl font-bold text-[--color-fg] font-[--font-display]">
@@ -115,8 +115,8 @@ export function PortableTextContent({ value }: Props) {
           ),
         },
         listItem: {
-          bullet: ({ children }) => <li className="leading-relaxed">{children}</li>,
-          number: ({ children }) => <li className="leading-relaxed">{children}</li>,
+          bullet: ({ children }) => <li className="leading-[1.75]">{children}</li>,
+          number: ({ children }) => <li className="leading-[1.75]">{children}</li>,
         },
       }}
     />
