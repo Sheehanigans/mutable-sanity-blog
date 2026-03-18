@@ -150,6 +150,10 @@ sanity/
 ```
 
 
-Blog Image Prompt Template Example:
+## Blog Image Prompt Template
 
-Image of [<REPLACE WITH SUBJECT HERE>], mid-century modern gouache illustration, dry brush texture, stylized geometric shapes, muted palette of burnt orange and avocado green, sophisticated editorial style, white border --ar 16:9
+> **Copy, fill in the subject, and paste into your image generator of choice.**
+
+```
+Image of [REPLACE WITH SUBJECT HERE], mid-century modern gouache illustration, dry brush texture, stylized geometric shapes, muted palette of burnt orange and avocado green, sophisticated editorial style, white border --ar 16:9
+```
