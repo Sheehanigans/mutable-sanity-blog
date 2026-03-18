@@ -4,6 +4,8 @@
 
 [build.environment]
   NODE_VERSION = "20"
+  # NEXT_PUBLIC_* vars are intentionally embedded in client bundles by design
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_SANITY_PROJECT_ID,NEXT_PUBLIC_SANITY_DATASET,NEXT_PUBLIC_SANITY_API_VERSION,NEXT_PUBLIC_SITE_URL"
 
 # On-demand revalidation webhook endpoint
 [[headers]]
